@@ -6,7 +6,7 @@ Well 'grepable' output is great but it lacks a lot of information, and json is j
 
 Python comes pre-installed in most distros, and we just want some quick and easy json output!
 
-Since I didn't find any script of this sort online ( that gives GOOD results and/or is written in PYTHON! ), I created my own and decided to share it with the world.
+Since I didn't find any script of this sort online ( that gives GOOD results AND is written in PYTHON! ), I created my own and decided to share it with the world.
 
 ## HOW TO
 `-f` flag is to specify the xml file location. If this is left empty it reads from STDIN\
