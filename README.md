@@ -6,9 +6,22 @@ Well 'grepable' output is great but it lacks a lot of information, and json is j
 
 Python is everywhere, and we just want some quick and easy json output!
 
-Since I didn't find any script of this sort online ( that gives GOOD results AND is written in PYTHON! ), I created my own and decided to share it with the world.
+Since I didn't find any script of this sort online ( that gives GOOD results AND is written in PYTHON ), I created my own and decided to share it with the world.
 
-## HOW TO
+## Usage
 `-f` flag is to specify the xml file location. If this is left empty it reads from STDIN\
 `-o` flag is to specify the file to output to, such as: `-o nmap.json`\
 `--no-print` flag is to not print to screen, default is to print
+## Examples
+- Saving to file without printing to screen
+```
+cat big_vlan.xml | python3 nmap_parser.py --no-print -o big_vlan.json
+
+python3 nmap_parser.py -f big_vlan.xml > big_vlan.json
+```
+- Printing to screen or outputing to other tools
+```
+cat big_vlan.xml | python3 nmap_parser.py | jq
+
+python3 nmap_parser.py -f big_vlan.xml -o big_vlan.json
+```
